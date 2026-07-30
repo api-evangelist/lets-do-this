@@ -1,0 +1,32 @@
+# Let's Do This
+
+> Let's Do This is an endurance-events marketplace where participants discover and
+> register for mass-participation sport — marathons, road races, trail runs,
+> triathlons, obstacle races and cycling events — across the United Kingdom and the
+> United States. The platform handles event discovery, entry purchase and entry
+> management, teams, memberships, referral credits and discount codes, and works with
+> event organisers and charity partners who list and sell places through it. The
+> company is backed by EQT Ventures.
+
+## Status
+
+Let's Do This does **not** publish a public API program. As of 2026-07-19 there is no
+developer portal, no API documentation, no API reference, no OpenAPI or GraphQL schema,
+no SDKs, no CLI, no webhook catalogue, no status page and no /.well-known/ discovery
+documents. Organiser and charity-partner integrations are handled through private
+commercial relationships, not a self-serve developer surface.
+
+A live GraphQL endpoint (https://graphql.letsdothis.com/graphql) backs the consumer
+marketplace, but it is undocumented, has introspection disabled, and is not offered as
+a third-party API.
+
+## Site
+
+- [Let's Do This](https://www.letsdothis.com/): Event discovery and registration marketplace.
+- [Help Center](https://help.letsdothis.com/): Participant support — accounts, entries, teams, memberships, purchases, discounts and event/charity partner topics.
+
+## Artifacts in this profile
+
+- [Domain security](security/lets-do-this-domain-security.yml): Probed TLS, DNSSEC, CAA, SPF and DMARC posture.
+- [Well-known probe](well-known/lets-do-this-well-known.yml): Recorded /.well-known/ discovery results (none published).
+- [GraphQL endpoint probe](graphql/lets-do-this-graphql-endpoint.yml): Evidence for the undocumented GraphQL endpoint.

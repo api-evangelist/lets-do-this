@@ -1,0 +1,23 @@
+generated: '2026-07-19'
+method: probed
+source: live HTTP probes of https://graphql.letsdothis.com
+status: undocumented
+summary: >-
+  Let's Do This runs a live, publicly reachable GraphQL endpoint that backs the
+  consumer marketplace. It is NOT a documented public API product: there is no
+  developer portal, no published schema, no authentication documentation and no
+  terms of use for third-party access. Introspection is disabled, so no schema
+  could be captured. Recorded here as a factual discovery only.
+endpoint: https://graphql.letsdothis.com/graphql
+probes:
+- request: GET https://graphql.letsdothis.com/
+  status: 404
+  note: JSON error envelope ("Route GET:/ not found") — Fastify-style service
+- request: POST https://graphql.letsdothis.com/graphql {"query":"{__typename}"}
+  status: 200
+  note: responded {"data":{"__typename":"Query"}} without authentication
+- request: POST https://graphql.letsdothis.com/graphql (full __schema introspection)
+  status: 403
+  note: '{"errors":[{"message":"Forbidden"}]} — introspection disabled'
+schema_captured: false
+schema_capture_blocked_by: introspection-disabled
