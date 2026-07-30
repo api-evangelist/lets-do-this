@@ -1,27 +1,78 @@
 aid: lets-do-this
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/lets-do-this.png
 name: Let's Do This
-description: 'Let''s Do This is a company surfaced as a portfolio company of eqt-ventures and added to
-  the API Evangelist network as a stub for enrichment. Sector: fitness-tech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Let's Do This is an endurance-events marketplace where participants discover and register for
+  mass-participation sport — marathons, road races, trail runs, triathlons, obstacle races and cycling
+  events — across the United Kingdom and the United States. The platform covers event discovery, entry
+  purchase and entry management, team entries, memberships, referral credits and discount codes, and it
+  works with event organisers and charity partners who list and sell places through it. Backed by EQT
+  Ventures. As of July 2026 Let's Do This publishes no public API program: there is no developer portal,
+  API documentation, machine-readable specification, SDK or webhook surface. A live but undocumented
+  GraphQL endpoint backs the consumer marketplace with introspection disabled.
 url: https://raw.githubusercontent.com/api-evangelist/lets-do-this/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - eqt-ventures
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api-program
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Fitness Tech
-apis: []
+- Endurance Sports
+- Events
+- Event Registration
+- Marketplace
+- Ticketing
+- Consumer
+apis:
+- name: Let's Do This GraphQL (undocumented)
+  description: >-
+    Live GraphQL endpoint backing the Let's Do This consumer marketplace. Discovered by probe, not
+    published as a developer product: no documentation, no published schema, no documented
+    authentication and no third-party terms of use. Introspection is disabled, so no schema could be
+    captured. Recorded as a factual discovery only — not a supported public API.
+  humanURL: https://www.letsdothis.com/
+  baseURL: https://graphql.letsdothis.com/graphql
+  x-status: undocumented
+  x-discovery: probed
+  tags:
+  - GraphQL
+  - Undocumented
+  properties:
+  - type: GraphQL
+    url: graphql/lets-do-this-graphql-endpoint.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/lets-do-this-domain-security.yml
 - type: Website
   url: https://www.letsdothis.com/
+- type: HelpCenter
+  url: https://help.letsdothis.com/
+- type: LLMsTxt
+  url: llms/lets-do-this-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
