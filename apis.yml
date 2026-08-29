@@ -33,6 +33,9 @@ description: >-
   API documentation, machine-readable specification, SDK or webhook surface. A live but undocumented
   GraphQL endpoint backs the consumer marketplace with introspection disabled.
 url: https://raw.githubusercontent.com/api-evangelist/lets-do-this/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "As of July 2026 Let's Do This publishes no public API program: there is no developer portal, API documentation, machine-readable specification, SDK or webhook surface."
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
