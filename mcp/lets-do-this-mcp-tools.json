@@ -1,0 +1,24 @@
+{
+  "endpoint": "https://mcp.letsdothis.com/mcp",
+  "captured": "2026-10-20",
+  "method": "initialize + tools/list (anonymous, no tool called; roadmap#992)",
+  "protocol_version": "2025-06-18",
+  "server_info": {
+    "name": "Let's Do This MCP Server",
+    "version": "1.0.0"
+  },
+  "result": {
+    "tools": [
+      {
+        "name": "help",
+        "description": "Get help with connecting to the Let's Do This MCP server",
+        "inputSchema": {
+          "type": "object",
+          "properties": {},
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        }
+      }
+    ]
+  }
+}
