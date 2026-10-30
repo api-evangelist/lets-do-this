@@ -64,19 +64,92 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Let's Do This is an endurance-events marketplace where participants discover and register for mass-participation sport — marathons, road races, trail runs, triathlons, obstacle races and cycling events — across the United Kingdom and the United States. It covers event discovery, entry purchase and management, team entries, memberships, referral credits and discount codes, and works with event organisers and charity partners who list and sell places through it.
+Let's Do This is an endurance-events marketplace where participants discover and register for mass-participation sport — marathons, road races, trail runs, triathlons, obstacle races and cycling events — across the United Kingdom and the United States. The platform covers event discovery, entry purchase and entry management, team entries, memberships, referral credits and discount codes, and it works with event organisers and charity partners who list and sell places through it. Backed by EQT Ventures. As of July 2026 Let's Do This publishes no public API program: there is no developer portal, API documentation, machine-readable specification, SDK or webhook surface. A live but undocumented GraphQL endpoint backs the consumer marketplace with introspection disabled.
 
-Backed by: eqt-ventures — https://www.letsdothis.com/
+**Areas:** Company · Fitness Tech · Endurance Sports · Event · Event Registration · Marketplace · Ticketing · Consumer
 
-## API posture (probed 2026-07-19)
+## Let's Do This on APIs.io
 
-Let's Do This publishes **no public API program**. There is no developer portal, API documentation, API reference, OpenAPI/GraphQL schema, SDK, CLI, webhook catalogue, status page or `/.well-known/` discovery document. The marketing site is fully bot-blocked (403); `docs.letsdothis.com` exists but is Vercel SSO-gated (internal). Organiser and charity-partner integrations appear to run through private commercial relationships rather than a self-serve developer surface.
+Everything profiled for Let's Do This is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/lets-do-this/](https://apis.io/providers/lets-do-this/)** — or go straight to one of the APIs or properties below.
 
-A live GraphQL endpoint at `https://graphql.letsdothis.com/graphql` backs the consumer marketplace — it answers unauthenticated `{__typename}` but has introspection disabled (403), so no schema could be captured. See `graphql/lets-do-this-graphql-endpoint.yml`.
+### APIs (1)
 
-## Artifacts
+- [Let's Do This GraphQL (undocumented)](https://apis.io/apis/lets-do-this/lets-do-this-graphql-undocumented/) — Live GraphQL endpoint backing the Let's Do This consumer marketplace. Discovered by probe, not published as a developer product: no documentation, no…
 
-- `security/lets-do-this-domain-security.yml` — probed TLS/DNSSEC/CAA/SPF/DMARC posture
-- `well-known/lets-do-this-well-known.yml` — recorded `/.well-known/` probe results (none published)
-- `graphql/lets-do-this-graphql-endpoint.yml` — evidence for the undocumented GraphQL endpoint
-- `llms/lets-do-this-llms.txt` — generated llms.txt profile
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [lets-do-this](https://apis.io/servers/lets-do-this/lets-do-this/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Lets Do This Domain Security](https://apis.io/security/lets-do-this/lets-do-this-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.letsdothis.com/)
+- [Blog](https://www.letsdothis.com/press)
+
+## API Evangelist rating
+
+**Kin Score 7.5** — minimal · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 0.0 |
+
+**Agent readiness 8.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/lets-do-this/](https://apis.io/providers/lets-do-this/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Let's Do This: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/lets-do-this/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
